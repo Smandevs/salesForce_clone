@@ -3,7 +3,8 @@ body{
     padding: 0;
     background-color: white;
     font-family: "Poppins";
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    box-sizing: border-box;
 }
 
 :root{
@@ -318,6 +319,10 @@ img{
     border: 0;
     border-radius: 5px;
 }
+.try-link{
+    text-decoration: none;
+    color: white;
+}
 .bg-green-btn:hover{
     background-color: rgb(20, 36, 20);
 }
@@ -347,10 +352,63 @@ img{
     font-weight: 600;
     font-size: 13px;
 }
+/*======================mobile navbar design=======================*/
+.mobile-nav{
+    display: none;
+}
+.mobile-nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px;
+    cursor: pointer;
+
+}
+.mobile-nav-item a{
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 1.7em;
+    font-weight: 600;
+}
+.mobile-nav-item a:hover{
+    color: var(--secondary-color);
+}
+.mobile-nav-item i{
+    color: var(--main-color);
+}
+.mobile-imp{
+    padding: 40px 0px;
+}
+.m2 a{
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.m-icon-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.m-icon-c i{
+    color: var(--main-color);
+}
+.mob-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mob-number a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
 /* _____________________________________hero section 1______________________________________ */
 
 .hero_section_1{
-    background-image: url(../PICTURES/saleForce_desktop_heroImage_background.jpg);
+    background-image: url(PICTURES/saleForce_desktop_heroImage_background.jpg);
     background-repeat: no-repeat;
     background-size: 100vw;
     display: flex;
@@ -750,7 +808,7 @@ img{
 }
 .card-section2-bg{
     padding-bottom: 100px;
-    background: url(../PICTURES/products-bg.jpg);
+    background: url(PICTURES/products-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -759,7 +817,7 @@ img{
 .sec4{
     margin-top: 70px;
     padding-bottom: 200px;
-    background: url(../PICTURES/sec4-bg.jpg);
+    background: url(PICTURES/sec4-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -880,7 +938,7 @@ img{
 }
 /* ________________________________section 9___________________________________________ */
 .sec9{
-    background-image: url(../PICTURES/sec9-bg-learn-as-you-grow.jpg);
+    background-image: url(PICTURES/sec9-bg-learn-as-you-grow.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -1088,7 +1146,7 @@ img{
 
 .getStarted-section{
     width: 100%;
-    background-image: url(../PICTURES/text-get-started-bg_64f1c4.webp);
+    background-image: url(PICTURES/text-get-started-bg_64f1c4.webp);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
@@ -1156,7 +1214,7 @@ img{
 .sticky{
     position: sticky;
     bottom: 0;
-    z-index: 1000;
+    z-index: 5;
     display: flex;
     justify-content: center;
 }
@@ -1254,6 +1312,9 @@ footer{
     .nav-small{
         display: flex;
     }
+    .mobile-nav{
+        display: block;
+    }
     .sec10-card a{
         position: absolute;
         top: 100%;
@@ -1279,7 +1340,7 @@ footer{
     }
     .hero_section_1{
         display: block;
-        background-image: url(../PICTURES/salesForce_heroSection_image_mobile.jpg);
+        background-image: url(PICTURES/salesForce_heroSection_image_mobile.jpg);
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 100%;
@@ -1513,5 +1574,21 @@ footer{
     }
     .foot_div1 a{
         margin-right: 0;
+    }
+}
+@media (max-width:1200px){
+    .mobile-nav{
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        transform: translateX(-100%);
+        transition: transform .3s ease;
+    }
+    .mobile-nav.open{
+        transform: translateX(0);
     }
 }
