@@ -1,0 +1,702 @@
+/* _______________________________________Generic design ________________________________________ */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Poppins";
+}
+
+:root{
+    --main-text-color: rgb(3,45,96);
+    --main-color: rgb(0, 39, 117);
+    --secondary-text-color:rgb(13,157,218);
+    --secondary-color: rgb(1,118,211);
+    --green-btn-color: rgb(46, 132, 74);
+}
+
+.m-t-c{
+    color: var(--main-text-color);
+}
+.s-t-c{
+    color: var(--secondary-text-color);
+}
+.buttons-wrapper{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+.bg-blue-btn2{
+    background-color: var(--secondary-color);
+    width: 140px;
+    color: white;
+    padding: 15px 17px;
+    margin-top: 3px;
+    font-weight: 700;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.bg-blue-btn2:hover{
+    background-color: rgb(2, 55, 90)
+}
+.bg-blue-btn{
+    background-color: var(--secondary-color);
+    width: 140px;
+    color: white;
+    padding: 15px 17px;
+    margin-top: 3px;
+    font-weight: 700;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.bg-blue-btn:hover{
+    background-color: rgb(2, 55, 90);
+}
+.blue-transparent-btn{
+    background-color: white;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px 0;
+    width: 130px;
+    padding: 13px 17px;
+    text-decoration: none;
+}
+.blue-transparent-btn:hover{
+    border: 2px solid var(--main-color);
+    color: var(--main-text-color);
+    background-color: rgba(1, 116, 211, 0.1);
+}
+.a-blue-color{
+    color: var(--secondary-text-color) !important;
+}
+.a-deepBlue-color{
+    color:var(--main-text-color) ;
+}
+
+/* ________________________________NAV BAR DESIGN__________________________________________ */
+nav{
+    background: white;
+    color: rgb(0, 12, 124);
+    padding: 15px 40px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.space{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.nav-small{
+    display: none;
+}
+
+img{
+    width:50px;
+}
+.logo{
+    width: 70px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.links-1{
+    display: flex;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.links-1 a{
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+.links-1 a[class="before"]::after{
+    content: "\f107";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+.links-1 a:hover{
+    color: var(--secondary-text-color);
+}
+
+
+.dropdown ul{
+    display: none;
+    position: relative;
+}
+
+.dropdown:hover ul{
+    display: block;
+    list-style: none;
+    background-color: white;
+    position: absolute;
+    left: 600px;
+    top: 50px;
+    width: 250px;
+    padding: 30px; 
+    text-align: left;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(173, 216, 230, 0.4),
+                0 6px 6px rgba(173, 216, 230, 0.3);
+
+}
+.dropdown ul li a:hover {
+    color: rgb(0, 183, 255) !important;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.dropdown ul li {
+    margin-bottom: 20px;
+}
+.dropdown ul li {
+    padding: 10px;
+}
+
+
+/* ________________________________________________________ */
+.links-2{
+    text-align: center;
+    padding: 0px, 0px;
+    font-size: 13px;
+    color: var(--main-text-color);
+}
+.links-2 a:hover{
+    color: var(--secondary-text-color);
+}
+/* ___________________________________________________________ */
+
+.region-dropdown{
+    cursor: pointer;
+    padding: 0px 10px;
+}
+.region-dropdown:hover ~ .dropped-links{
+    display: block;
+    background-color: red;
+
+}
+
+.dropped-links{
+ display: none;
+}
+/*_________________________login link dropdown design_____________________________________*/
+.login-options .options{
+    display: none;
+    position: relative;
+}
+
+.login-options:hover .options{
+    display: block;
+    list-style-type: none;
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    top: 68px; 
+    width: 250px;
+    padding: 30px;
+    text-align: left;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(173, 216, 230, 0.4),
+                0 6px 6px rgba(173, 216, 230, 0.3);
+}
+.login-text-style1{
+    font-weight:300;
+    color: rgb(68, 66, 66);
+    font-size: 14px;
+}
+.login-link{
+    text-decoration: none;
+    color: rgb(70, 3, 133);
+    padding: 10px;
+}
+.login-link::before{
+    content: "\f007";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 5px;
+}
+.login-link:hover{
+    background-color:rgba(1, 116, 211, 0.192) ;
+    border-radius: 20px;
+}
+.options a{
+    color: var(--main-text-color);
+}
+.login-text-style2{
+    color: rgb(68, 66, 66);
+}
+
+.bg-green-btn{
+    background-color: var(--green-btn-color);
+    width: 140px;
+    color: white;
+    padding: 13px 25px;
+    margin-top: 3px;
+    font-weight: 700;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+}
+.bg-green-btn:hover{
+    background-color: rgb(20, 36, 20);
+}
+.hover-style1{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover-style1:hover{
+    background-color:rgba(1, 116, 211, 0.192);
+    border-radius: 50%;
+}
+/* ________________________________________________________section 1______________________________________________ */
+.sec1{
+    background: linear-gradient(to bottom, rgba(118, 233, 248, 0.2),rgb(255,255,255)); ;
+}
+/*   section 1 grid */
+.sec1-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    padding: 20px 5%;
+}
+/*   form styling */
+.form{
+    padding: 40px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+                0 4px 8px rgba(0, 0, 0, 0.1),
+                0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 15px;
+}
+.display-small{
+    display: none;
+}
+
+/*    form input grid    */
+.form-input-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+/*   label design */
+.input-container{
+    position: relative;
+    margin-bottom: 20px;
+}
+.input-container input{
+    width: 90%;
+    font-size: 15px;
+    padding: 5px 5px;
+}
+.input-container select{
+    width: 94%;
+    font-size: 15px;
+    padding: 5px 5px;
+}
+
+.input-container label{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+}
+/*   form button design */
+.form-contact-btn{
+    width: 100%;
+}
+.form-contact-btn button{
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 0px;
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--secondary-color);
+    color: white;
+
+}
+
+/*   user agreement  */
+.user-agreement-container{
+    display: flex;
+    align-items:first baseline;
+    font-size: 0.9em;
+}
+.privacy-container{
+    font-size: 0.8em;
+}
+
+.sec1-RHS h1{
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--main-text-color);
+}
+.call-icon{
+    padding: 20px 20px 10px 20px;
+    background-color: rgba(127, 255, 212, 0.147);
+    color: var(--main-color);
+    border-radius: 50%;
+}
+.flex-display{
+    display: flex;
+    gap: 10px;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.form-need-help a{
+    color: var(--secondary-text-color);
+}
+.form-need-help a:hover{
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+/* _____________________________________________________section 2________________________________________________ */
+.sec2-header{
+    padding-top:30px ;
+}
+.sec2-header h2{
+    text-align: center;
+    color: var(--main-text-color);
+    font-size: 2em;
+}
+.sec2-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    padding: 20px 5%;
+}
+/*    card design */
+.sec2-card{
+    height: max-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+                0 4px 8px rgba(0, 0, 0, 0.1),
+                0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 50px;
+}
+.sec2-card-icon{
+    padding: 20px;
+    border-radius: 50%;
+    background-color:rgba(127, 255, 212, 0.178);
+    color: var(--main-colors);
+    margin-bottom: 10px;
+}
+.sec2-card h3{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--main-text-color);
+}
+.sec2-card p{
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+.sec2-card a{
+    color: var(--main-text-color);
+    font-size: 1em;
+    font-weight: 600;
+}
+.sec2-card a:hover{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+/* __________________________last section before the footer(Quick links)__________________________________________ */
+.gridbox-quickLinks{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 30px 10%;
+}
+.grid-link-contactUs{
+    text-align:start;
+}
+.logo2{
+    width: 90px;
+}
+.icon-box{
+    display: flex;
+    gap: 15px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.icon-box i{
+    font-size: 20px;
+    background-color: rgb(48, 45, 45);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.contact-link5{
+    font-size: 14px;
+    color: var(--main-text-color);
+}
+
+.quick-links{
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--secondary-text-color);
+}
+.links{
+    list-style-type: none;
+}
+.bold-Text{
+    font-size: 15px;
+    font-weight: bold;
+    color:  rgb(48, 45, 45);
+    position: relative;
+    left: 40px;
+}
+
+/* ________________________________Footer Design________________________________ */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+
+}
+.foot_div1{
+    text-align: right;
+}
+.foot_div1 a{
+    color: white;
+    text-decoration: none;
+    font-weight:500;
+    font-size: 17px;
+    margin-right: 50px;
+}
+.foot_div1 a::before{
+    content: "\f0ac";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 5px;
+}
+.foot_div1 a::after{
+    content: "\f078";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-left: 5px;
+}
+.foot_div2{
+    padding-right: 17%;
+}
+.foot-text{
+    margin-right: 20px;
+    color: white;
+    font-size: 12px;
+}
+.foot-text-a a{
+    color: white;
+}
+/* _______________________________RESPONSIVE DESIGN_____________________________ */
+@media(width >1200px){
+    .display-medium{
+        display: none;
+    }
+}
+@media(width< 1200px) {
+    .nav-large{
+        display: none;
+    }
+    .nav-small{
+        display: flex;
+    }
+    .sec10-card a{
+        position: absolute;
+        top: 100%;
+    }
+    .sec11-card a{
+        position: absolute;
+        top: 120%;
+    }
+    .sec1-RHS{
+        display: none;
+    }
+}
+@media(width<979px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .nav-large{
+        display: none;
+    }
+    .nav-small{
+        display: flex;
+    }
+    .gridbox-quickLinks{
+        display: none;
+    }
+}
+@media(width<768px){
+    .grid{
+        grid-template-columns: 1fr ;
+        gap: 20px;
+    }
+    .flex{
+       grid-template-columns: 1fr ;
+       gap: 20px; 
+    }
+    .nav-write-up{
+        display: block;
+        padding: 10px;
+    }
+    .nav-write-up a{
+        padding-left: 0;
+
+    }
+     .nav-large{
+        display: none;
+    }
+    .nav-small{
+        display: flex;
+    }
+    .getStarted-section{
+        font-size: 30px;
+    }
+    .sec5-button{
+        text-align: center;
+    }
+     .bg-blue-btn{
+        padding: 13px 32%;
+    }
+    .gridbox-quickLinks{
+        display: none;
+    }
+    footer{
+        display: block;
+    }
+    .foot_div1{
+        text-align: center;
+    }
+    .foot_div2{
+        padding: 0;
+    }
+    .foot_div1 a{
+        margin-right: 0;
+    }
+    .buttons-wrapper{
+        display: block;
+        width: 100%;
+        padding-right: 20px;
+    }
+    .bg-blue-btn2{
+        display: block;
+        width:90%;
+        margin-bottom: 20px;
+    }
+    .blue-transparent-btn{
+        display: block;
+        width: 90%;
+    }
+    .display-small{
+        display: block;
+    }
+    .display-medium{
+        display: none;
+    }
+    .form-input-grid{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .sec2-grid{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .input-container select{
+        width: 100%;
+    }
+    .input-container input{
+        width: 96.5%;
+    }
+}
+@media(width<600px){
+    .grid{
+        grid-template-columns: 1fr ;
+        gap: 20px;
+    }
+    .flex{
+        grid-template-columns: 1fr ;
+        gap: 20px;
+    }
+    .nav-write-up{
+        display: block;
+        padding: 10px;
+    }
+    .nav-write-up a{
+        padding-left: 0;
+
+    }
+    .nav-large{
+        display: none;
+    }
+    .nav-small{
+        display: flex;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+    .logo{
+        width: 50px;
+    }
+    .bg-green-btn{
+        width: 70px;
+        font-size: 10px;
+        padding: 10px 5px;
+    }
+    .getStarted-section{
+        font-size: 20px;
+    }
+    .bg-blue-btn{
+        padding: 13px 32%;
+    }
+    .gridbox-quickLinks{
+        display: none;
+    }
+    .sec9-div-1{
+        text-align: center;
+        padding: 0px 10%;
+    }
+    .sec11-card a{
+        position: absolute;
+        top: 98%;
+        left: 40%;
+    }
+    footer{
+        display: block;
+    }
+    .foot_div1{
+        text-align: center;
+    }
+    .foot_div2{
+        padding: 0;
+    }
+    .foot_div1 a{
+        margin-right: 0;
+    }
+}
+

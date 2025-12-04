@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="project1ContactUsPage.css">
+    <script src="https://kit.fontawesome.com/d5149fbb6e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- ___________________________________NAVIGATION BAR___________________________________________ -->
+<nav>
+    <div class="space">
+        <div class="nav-small">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div >
+            <img src="../PICTURES/Salesforce-logo.jpg" alt="salesforce logo" class="logo">
+        </div>
+    </div>
+    <div class="space">
+        <div class="nav-small">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="nav-small">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="links-1 nav-large">
+            <ul><a href="#">Products</a></ul>
+            <ul><a href="#">Industries</a></ul>
+            <ul><a href="#">Customers</a></ul>
+            <ul><a href="#">Learning</a></ul>
+            <ul><a href="#">Support</a></ul>
+            <ul>
+                <div class="dropdown">
+                    <a href="#" class="before">More</a>
+                    <ul>
+                        <li><a href="#" class="dropdown-link1">Salesforce+</a></li>
+                        <li><a href="#" class="dropdown-link1">Company</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <div class="links-2 nav-large">
+            <a href="project1ContactUsPage.html">Contact Us</a><br>
+            <span> 1-800-664-9073</span>
+        </div>
+        <div class="nav-large hover-style1">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="region-dropdown nav-large hover-style1">
+            <i class="fas fa-globe "></i>
+            <div class="dropped-links">
+                <h3>Change Region</h3>
+                <div>
+                    <ul>
+                        <li><a href="#">Americas</a></li>
+                        <li><a href="#">América Latina</a></li>
+                        <li><a href="#">(Español)</a></li>
+                        <li><a href="#">Brasil (Português)</a></li>
+                        <li><a href="#">Canada (English)</a></li>
+                        <li><a href="#">Canada (Français)</a></li>
+                        <li><a href="#">United States (English)</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Europe, Middle East, and Africa</a></li>
+                        <li><a href="#">España (Español)</a></li>
+                        <li><a href="#">Deutschland (Deutsch)</a></li>
+                        <li><a href="#">France (Français)</a></li>
+                        <li><a href="#">Italia (Italiano)</a></li>
+                        <li><a href="#">Nederland (Nederlands)</a></li>
+                        <li><a href="#">Sverige (Svenska)</a></li>
+                        <li><a href="#">United Kingdom (English)</a></li>
+                        <li><a href="#">All other countries (English)</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Asia Pacific</a></li>
+                        <li><a href="">Australia & New Zealand (English)</a></li>
+                        <li><a href="">India (English)</a></li>
+                        <li><a href="">日本 (日本語)</a></li>
+                        <li><a href="">中国 (简体中文)</a></li>
+                        <li><a href="">台灣 (繁體中文)</a></li>
+                        <li><a href="">한국 (한국어)</a></li>
+                        <li><a href="">ประเทศไทย (ไทย)</a></li>
+                        <li><a href="">All other countries (English)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-large login-options">
+            <a href="#" class="login-link">Login</a>
+            <div class="options">
+                <div>
+                    <h3>Login</h3>
+                    <p class="login-text-style1">products</p>
+                    <p><a href="#">Salesforce</a></p>
+                    <p><a href="#">Marketing Cloud</a></p>
+                </div>
+                <hr>
+                <div>
+                    <p class="login-text-style1">Experiences</p>
+                    <p><a href="#">Trailblazer Account</a></p>
+                    <p class="login-text-style2">Access Trailhead, your Trailblazer profile, community, learning, original series, events, support, and more.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="bg-green-btn">Try for free</button>
+        </div>
+    </div>
+</nav>
+
+<!-- _____________________________________________section 1_____________________________________________________________________ -->
+<section class="sec1">
+    <div class="sec1-grid">
+        <!--     form section -->
+        <div class="sec1-LHS">
+            <form action="" class="form">
+                <div>
+                    <h3>Request a call.</h3>
+                    <p>Give us some info so the right person can get back to you.</p>
+                </div>
+                <div class="form-input-grid">
+                    <div class="input-container">
+                        <label for="Fname">First name</label>
+                        <input type="text" name="Fname" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="Lname">Last name</label>
+                        <input type="text" name="Lname" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="JobTitle">Job title</label>
+                        <input type="text" name="JobTitle" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="Company">Company</label>
+                        <input type="text" name="Company" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="companySize">Company size</label>
+                        <select name="companySize">
+                            <option value="option1" disabled selected>Select company size</option>
+                            <option value="option2">1 - 20 employees</option>
+                            <option value="option3">21 - 100 employees</option>
+                            <option value="option3">101 - 500 employees</option>
+                            <option value="option3">501 - 3,500 employees</option>
+                            <option value="option5">3,501+ employees</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="productInterest">Product interest</label>
+                        <select name="productInterest">
+                            <option value="option1" disabled selected>Select product interest</option>
+                            <option value="option2">Agentforce +</option>
+                            <option value="option3">Artificial Intelligence</option>
+                            <option value="option4">Commercxe</option>
+                            <option value="option5">customer Success</option>
+                            <option value="option5">Sales</option>
+                            <option value="option5">Salesforce platform</option>
+                            <option value="option5">Slack</option>
+                            <option value="option5">Mulesoft</option>
+                            <option value="option5">Heruko</option>
+                            <option value="option5">Data cloud</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="country">Country/Region</label>
+                        <select name="country" >
+                            <option value="option1">Angola</option>
+                            <option value="option2">China</option>
+                            <option value="option3">United State of America</option>
+                            <option value="option4">India</option>
+                            <option value="option5">Japan</option>
+                            <option value="option5">South Korea</option>
+                            <option value="option5">Ghana</option>
+                            <option value="option5">Brazil</option>
+                            <option value="option5">Canada</option>
+                            <option value="option5">United Kindom</option>
+                            <option value="option5">Republic of Congo</option>
+                            <option value="option5">Ethopia</option>
+                            <option value="option5">Denmark</option>
+                            <option value="option5">Purtugal</option>
+                            <option value="option5">Spain</option>
+                            <option value="option1" selected>Nigeria</option>
+                            <option value="option5">Greece</option>
+                            <option value="option5">Nepal</option>
+                            <option value="option5">Russia</option>
+                            <option value="option5">France</option>
+                            <option value="option5">Indonesia</option>
+                            <option value="option5">New zealand</option>
+                          <option value="option5">Chad</option>
+                        </select>
+                     </div>
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" required>
+                    </div>
+                </div>
+                <div class="user-agreement-container">
+                    <input type="checkbox">
+                    <p>Yes, I would like to receive marketing communications regarding Salesforce products, services, and events. I can unsubscribe at any time.</p>
+                </div>
+                <div class="privacy-container">
+                    <p>We value your privacy. To learn more, visit our <a href="#">Privacy Statement.</a></p>
+                </div>
+                <div class="form-contact-btn">
+                    <button>Contact me</button>
+                </div>
+                <div class="form-need-help display-small">
+                    <div class="flex-display">
+                        <i class="fa solid fa-phone call-icon"></i>
+                        <p>Need help now ? Call +1 866-799-7427</p>
+                    </div>
+                    <p><b>More Questions?</b></p>
+                    <p>For billing and tech support, vist <a href="#">Salesforce Help.</a></p>
+                </div>
+            </form>
+            <div class="form-need-help display-medium">
+                <div class="flex-display">
+                    <i class="fa solid fa-phone call-icon"></i>
+                    <p>Need help now ? Call +1 866-799-7427</p>
+                </div>
+                <p><b>More Questions?</b></p>
+                <p>For billing and tech support, vist <a href="#">Salesforce Help.</a></p>
+            </div>
+        </div>
+        <!-- write up section -->
+        <div class="sec1-RHS">
+            <h1>How would you like to contact Salesforce?</h1>
+            <div class="flex-display">
+                <i class="fa solid fa-phone call-icon"></i>
+                <p>Need help now? Call <a href="#">+1 866-799-7428</a></p>
+            </div>
+            <p><b>More Questions?</b></p>
+            <p>For billing and tech support, visit <a href="#">Salesforce Help.</a></p>
+        </div>
+    </div>
+</section>
+<!-- _____________________________________________section 2______________________________________________________________ -->
+ <section class="sec2">
+    <div class="sec2-header">
+        <h2>More ways to contact.</h2>
+    </div>
+    <div class="sec2-grid">
+        <div class="sec2-card">
+            <div>
+                <i class="sec2-card-icon fa-solid fa-computer"></i>
+            </div>
+            <div>
+                <h3>Find a Global Office.</h3>
+                <p>Not in the U.S? Find a Global Office near you.</p>
+            </div>
+            <div>
+                <a href=""> See our Global offers</a>
+            </div>
+        </div>
+        <div class="sec2-card">
+            <div>
+                <i class="sec2-card-icon fa-solid fa-users"></i>
+            </div>
+            <div>
+                <h3>Manage accounts.</h3>
+                <p>Users with permissions can self-manage licenses and renewals.</p>
+            </div>
+            <div>
+                <a href="">Learn about Your Account App</a>
+            </div>
+        </div>
+        <div class="sec2-card">
+            <div>
+                <i class="sec2-card-icon fa-solid fa-file-lines"></i>
+            </div>
+            <div>
+                <h3>Send us feedback.</h3>
+                <p>Let us know what you think: products, site or otherwise.</p>
+            </div>
+            <div>
+                <a href=""> send feedback</a>
+            </div>
+        </div>
+    </div>
+ </section>
+<!--______________________________________________quick links section________________________________________________________ -->
+     <section>
+        <div class="gridbox-quickLinks">
+            <div class="grid-link-contactUs">
+                <img src="../PICTURES/Salesforce-logo.jpg" alt="saleforce logo" class="logo2">
+                <div class="icon-box">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <p>Call us at 1-800-664-9073</p>
+                <a href="project1ContactUsPage.html" class="contact-link5">See all ways to contact us</a>
+            </div>
+            <div class="grid-link1">
+                <p class="bold-Text">New to Salesforce ?</p>
+                <ul class="links">
+                    <li><a href="#"class="quick-links">What is CRM?</a></li>
+                    <li><a href="#"class="quick-links">Digital Marketing</a></li>
+                    <li><a href="#"class="quick-links">Customer Service Software</a></li>
+                    <li><a href="#"class="quick-links">Email Marketing</a></li>
+                    <li><a href="#"class="quick-links">Ecommerce</a></li>
+                    <li><a href="#"class="quick-links">Artificial Intelligence</a></li>
+                    <li><a href="#"class="quick-links">Revenue Management Solutions</a></li>
+                    <li><a href="#"class="quick-links">AI Agents</a></li>
+                    <li><a href="#"class="quick-links">SaaS</a></li>
+                </ul>
+            </div>
+            <div class="grid-link2">
+                <p class="bold-Text">About Salesforce</p>
+                <ul class="links">
+                    <li><a href="#"class="quick-links">What is salesforce</a></li>
+                    <li><a href="#"class="quick-links">Newsroom</a></li>
+                    <li><a href="#"class="quick-links">Customer Success</a></li>
+                    <li><a href="#"class="quick-links">Blog</a></li>
+                    <li><a href="#"class="quick-links">Careers</a></li>
+                    <li><a href="#"class="quick-links">Trust</a></li>
+                    <li><a href="#"class="quick-links">Sustainability</a></li>
+                    <li><a href="#"class="quick-links">Investors</a></li>
+                    <li><a href="#"class="quick-links">Give us your Feedback</a></li>
+                </ul>
+            </div>
+            <div class="grid-link3">
+                <p class="bold-Text">Popular Links</p>
+                <ul class="links">
+                    <li><a href="#"class="quick-links">Salesforce login</a></li>
+                    <li><a href="#"class="quick-links">News release features</a></li>
+                    <li><a href="#"class="quick-links">Find or Become a Partner</a></li>
+                    <li><a href="#"class="quick-links">Dreamforce</a></li>
+                    <li><a href="#"class="quick-links">Salesforce+</a></li>
+                    <li><a href="#"class="quick-links">CRM Software</a></li>
+                    <li><a href="#"class="quick-links">All Cloud Products</a></li>
+                    <li><a href="#"class="quick-links">Product Pricing</a></li>
+                    <li><a href="#"class="quick-links">Newsletter Sign-up</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!-- _______________________________________foooter___________________________________________ -->
+     <footer>
+        <div class="foot_div1">
+            <a href="#" class="foot-link-div1">worldwide</a>
+        </div>
+        <div class="foot_div2">
+                <div id="foot-div2-links">
+                    <a href="#" class="foot-text">Legal</a></li>
+                    <a href="#" class="foot-text">Terms of Service</a></li>
+                    <a href="#" class="foot-text">Privacy Information</a></li>
+                    <a href="#" class="foot-text">Responsible Disclosure</a></li>
+                    <a href="#" class="foot-text">Trust</a></li>
+                    <a href="#" class="foot-text">Contact</a></li>
+                    <a href="#" class="foot-text">Cookie Preferences</a></li>
+                    <a href="#" class="foot-text">Your Privacy Choices</a></li>
+                </div>
+            <p class="foot-text foot-text-a">© Copyright 2025 Salesforce, Inc. <a href="#">All rights reserved</a>. Various trademarks held by their respective owners. Salesforce, Inc. <br> Salesforce Tower, 415 Mission Street, 3rd Floor, San Francisco, CA 94105, United States</p>
+        </div>
+    </footer>
+</body>
+</html>

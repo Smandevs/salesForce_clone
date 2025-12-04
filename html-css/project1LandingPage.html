@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description >
+    <title>SalesForce Clone</title>
+    <link rel="stylesheet" href="project1LandingPage.css">
+    <script src="https://kit.fontawesome.com/d5149fbb6e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- things to note
+1. this project is a demo clone of the original saleforce website designed for training purposes only.    
+2. all background image where inputed with CSS, therefore there is no lazy loading.
+3.
+
+-->
+<!-- ___________________________________NAVIGATION BAR___________________________________________ -->
+<nav>
+    <div class="space">
+        <div class="nav-small">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div >
+            <img src="../PICTURES/Salesforce-logo.jpg" alt="salesforce logo" class="logo">
+        </div>
+    </div>
+    <div class="space">
+        <div class="nav-small">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="nav-small">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="links-1 nav-large">
+            <ul><a href="#">Products</a></ul>
+            <ul><a href="#">Industries</a></ul>
+            <ul><a href="#">Customers</a></ul>
+            <ul><a href="#">Learning</a></ul>
+            <ul><a href="#">Support</a></ul>
+            <ul>
+                <div class="dropdown">
+                    <a href="#" class="before">More</a>
+                    <ul>
+                        <li><a href="#" class="dropdown-link1">Salesforce+</a></li>
+                        <li><a href="#" class="dropdown-link1">Company</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <div class="links-2 nav-large">
+            <a href="project1ContactUsPage.html">Contact Us</a><br>
+            <span> 1-800-664-9073</span>
+        </div>
+        <div class="nav-large hover-style1">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="region-dropdown nav-large hover-style1">
+            <i class="fas fa-globe "></i>
+            <div class="dropped-links">
+                <h3>Change Region</h3>
+                <div class="region-ul-grid">
+                    <ul>
+                        <li><p>Americas</p></li>
+                        <li><a href="#">América Latina</a></li>
+                        <li><a href="#">(Español)</a></li>
+                        <li><a href="#">Brasil (Português)</a></li>
+                        <li><a href="#">Canada (English)</a></li>
+                        <li><a href="#">Canada (Français)</a></li>
+                        <li><a href="#">United States (English)</a></li>
+                    </ul>
+                    <ul class="ul-border">
+                        <li><p>Europe, Middle East, and Africa</p></li>
+                        <li><a href="#">España (Español)</a></li>
+                        <li><a href="#">Deutschland (Deutsch)</a></li>
+                        <li><a href="#">France (Français)</a></li>
+                        <li><a href="#">Italia (Italiano)</a></li>
+                        <li><a href="#">Nederland (Nederlands)</a></li>
+                        <li><a href="#">Sverige (Svenska)</a></li>
+                        <li><a href="#">United Kingdom (English)</a></li>
+                        <li><a href="#">All other countries (English)</a></li>
+                    </ul>
+                    <ul class="ul-border">
+                        <li><p>Asia Pacific</p></li>
+                        <li><a href="">Australia & New Zealand (English)</a></li>
+                        <li><a href="">India (English)</a></li>
+                        <li><a href="">日本 (日本語)</a></li>
+                        <li><a href="">中国 (简体中文)</a></li>
+                        <li><a href="">台灣 (繁體中文)</a></li>
+                        <li><a href="">한국 (한국어)</a></li>
+                        <li><a href="">ประเทศไทย (ไทย)</a></li>
+                        <li><a href="">All other countries (English)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-large login-options">
+            <a href="#" class="login-link">Login</a>
+            <div class="options">
+                <div>
+                    <h3>Login</h3>
+                    <p class="login-text-style1">products</p>
+                    <p><a href="#">Salesforce</a></p>
+                    <p><a href="#">Marketing Cloud</a></p>
+                </div>
+                <hr>
+                <div>
+                    <p class="login-text-style1">Experiences</p>
+                    <p><a href="#">Trailblazer Account</a></p>
+                    <p class="login-text-style2">Access Trailhead, your Trailblazer profile, community, learning, original series, events, support, and more.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="bg-green-btn">Try for free</button>
+        </div>
+    </div>
+</nav>
+                <!-- _______________________SUB NAVBAR CONTENT_______________________________-->
+    <div class="nav-write-up">
+        <p>G2 names Salesforce the best CRM for small business.</p>
+        <a href="#">Read the report</a>
+    </div>
+<!-- ________________________________SECTION 1___________________________________ -->
+<!-- i should have used grid display... but i wanted to test my css skills with display flex😎 -->
+<section class="hero_section_1">
+    <div class="hero1_div1 section-divide">
+        <p class="m-t-c">Salesforce. The #1 AI CRM.</p>
+        <h1 class="m-t-c"><span class="s-t-c">Grow faster</span> and <br> work smarter.</h1>
+        <p>Start simply with Starter Suite, the all-in-one CRM for small business. Then scale endlessly with autonomous AI agents, unified data, and CRM apps together on one integrated platform. And connect with customers in a whole new way.</p>
+        <div class="buttons-wrapper">
+            <a href="project1LoginPage.html" class="bg-blue-btn2" target="_blank"> Try for free</a>
+            <a href="#" class="blue-transparent-btn" target="_blank"> watch demos</a>
+        </div>
+    </div>
+    <div class="hero1_div2 section-divide">
+        <div class="video_wrapper">
+        <video src="../VIDEOS/hero_section_video1.mp4" autoplay muted loop preload="none"></video>
+        </div>
+    </div>
+</section>
+<!-- __________________________________Hero section 2__________________________________________ -->
+ <section>
+    <div class="hero_section_2">
+        <h2>Create a limitless workforce. <br>With Agentforce.</h2>
+        <p>Create a digital labor force that works alongside your human workforce. <a href="#" class="a-blue-color">AI agents</a> work 24/7, taking action and providing support to employees and customers. Free your people to be more productive, so they can focus on more important stuff.</p>
+        <div class="buttons-wrapper">
+            <a href="project1LoginPage.html" class="bg-blue-btn2" target="_blank"> Try for free</a>
+            <a href="#" class="blue-transparent-btn" target="_blank"> watch demos</a>
+        </div>
+    </div>
+ </section>
+<!--____________________________________slide logos section_______________________________________________  -->
+
+<section>
+    <div class="slide-sec-1">
+        <h3>Agentforce is trusted by:</h3>
+        <i class="fa-regular fa-circle-pause"></i>
+    </div>
+    <!-- _______________this is our slider image section_______________________ -->
+    <div class="slide-sec-2">
+        <div class="brand_logos">
+            <img src="../PICTURES/logo1-accountants.png" alt="">
+            <img src="../PICTURES/logo2-bigbrother-bigsister.png" alt="">
+            <img src="../PICTURES/logo3-indeed-logo-v2.png" alt="">
+            <img src="../PICTURES/logo4-lennar.png" alt="">
+            <img src="../PICTURES/logo5-LIV-golf.png" alt="">
+            <img src="../PICTURES/logo6-goodyear.png" alt="">
+            <img src="../PICTURES/logo7-grupo-globo.png" alt="">
+            <img src="../PICTURES/logo8-f1.png" alt="">
+            <img src="../PICTURES/logo9-Finnair.png" alt="">
+            <img src="../PICTURES/logo10-Pepsico.png" alt="">
+            <img src="../PICTURES/logo11-opentable.png" alt="">
+            <img src="../PICTURES/logo12-university-chicago-med.png" alt="">
+            <!-- another clone of the image to give it the illusion of reapeating seamlessly -->
+            <img src="../PICTURES/logo1-accountants.png" alt="">
+            <img src="../PICTURES/logo2-bigbrother-bigsister.png" alt="">
+            <img src="../PICTURES/logo3-indeed-logo-v2.png" alt="">
+            <img src="../PICTURES/logo4-lennar.png" alt="">
+            <img src="../PICTURES/logo5-LIV-golf.png" alt="">
+            <img src="../PICTURES/logo6-goodyear.png" alt="">
+            <img src="../PICTURES/logo7-grupo-globo.png" alt="">
+            <img src="../PICTURES/logo8-f1.png" alt="">
+            <img src="../PICTURES/logo9-Finnair.png" alt="">
+            <img src="../PICTURES/logo10-Pepsico.png" alt="">
+            <img src="../PICTURES/logo11-opentable.png" alt="">
+            <img src="../PICTURES/logo12-university-chicago-med.png" alt="">
+        </div>
+    </div>
+</section>
+<!-- ____________________________________________section 3_______________________________________________ -->
+<section class="sec3">
+    <h2>Start simply. Scale endlessly.</h2>
+    <div class="sec3-grid">
+        <div class="hero1_div2 section-divide sec3-gridItem-1 sec3-gridItem">
+            <div class="video_wrapper">
+                <video src="../VIDEOS/hero_section_video1.mp4" autoplay muted loop ></video>
+            </div>
+        </div>
+        <div class="sec3-gridItem-2 sec3-gridItem">
+            <h3>See results on day one with Starter Suite.</h3>
+            <p>Our all-in-one small business solution,<a href="#" class="a-blue-color">Starter Suite</a>, brings sales, service, marketing, and Slack together on a single, easy-to-use app. Set up in a matter of minutes with built-in guidance and easy-to-follow onboarding.</p>
+            <p><b>$25 USD/user/month <a href="" class="a-blue-color">See full pricing</a></b></p>
+            <div class="sec3-btn-padding">
+                <a href="project1LoginPage.html" class="bg-blue-btn2" target="_blank">Try for free</a>
+            </div>
+        </div>
+        <div class="sec3-gridItem-3 sec3-gridItem">
+
+        </div>
+        <div class="sec3-gridItem-4 sec3-gridItem">
+            <div class="blue-border-design">
+                <a href="#" class="a-blue-color">Lead, Contact, and Opportunity Management</a>
+                <p>Capture and track customer data from any source. Keep your team on track with built-in deal stages. Get recommended next steps to move deals along the pipeline.</p>
+            </div>
+            <ul>
+                <li><a href="#">Email Marketing</a></li>
+                <li><a href="#">Service Case Management</a></li>
+                <li><a href="#" class="li-special">Reporting and Analytics</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="card-section">
+    <!-- _______________________________________CARD SECTION 1__________________________________________ -->
+        <div>
+            <div class="cards-h2">
+                <h2>Get data, analytics, CRM apps, and agents. All on one deeply integrated platform.</h2>
+            </div>
+            <div class="cards-section-1 grid">
+                <div class="cards"> <!--card 1-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Agentforce</a>
+                        <p>Build and customize autonomous AI agents to support your employees and customers 24/7. </p>
+                        <div>
+                            <a href="">Explore Agentforce</a>
+                            <i class="fa-solid fa-robot card1-iconColor-1" ></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-1"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+
+                 <div class="cards"> <!--card 2-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Small Busines</a>
+                        <p>Help small businesses sell smarter and support faster in a single app</p>
+                        <div>
+                            <a href="">Explore Small Business</a>
+                            <i class="fa-solid fa-shop card1-iconColor-2"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-2"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+
+                 <div class="cards"> <!--card 3-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Sales</a>
+                        <p>Connect teams, close more deals, and simplify your sales process. </p>
+                        <div>
+                            <a href="">Explore Sales</a>
+                            <i class="fa-solid fa-chart-line card1-iconColor-3"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-3"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                 <div class="cards"> <!--card 4-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Service</a>
+                        <p>Manage customer support cases faster across every channel.</p>
+                        <div>
+                            <a href="">Explore Service</a>
+                            <i class="fa-solid fa-heart card1-iconColor-4"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-4"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                 <div class="cards"> <!--card 5-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Marketing</a>
+                        <p>Easily build, personalize, and optimize campaigns and journeys.</p>
+                        <div>
+                            <a href="">Explore Marketing</a>
+                            <i class="fa-regular fa-circle-user card1-iconColor-5"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-5"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                 <div class="cards"> <!--card 6-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Commerce</a>
+                        <p>Engage buyers online and in-store with B2C and B2B commerce.</p>
+                        <div>
+                            <a href="">Explore Commerce</a>
+                            <i class="fa-solid fa-cart-shopping card1-iconColor-6"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-6"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                 <div class="cards"> <!--card 7-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Artificial Intelligence</a>
+                        <p>Bring predictive and generative AI experiences to any workflow, user, department, or industry.</p>
+                        <div>
+                            <a href="">Explore AI</a>
+                            <i class="fa-regular fa-face-flushed card1-iconColor-7"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-7"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                 <div class="cards"> <!--card 8-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Data Cloud</a>
+                        <p>Unify all your data to power personalized engagement at scale.</p>
+                        <div>
+                            <a href="">Explore Data Cloud</a>
+                            <i class="fa-solid fa-user-astronaut card1-iconColor-8"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-8"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                 <div class="cards"> <!--card 9-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Salesforce Platform</a>
+                        <p>Connect your teams and data with apps built in clicks, not code.</p>
+                        <div>
+                            <a href="">Explore Salesforce Platform</a>
+                            <i class="fa-regular fa-bolt-lightning card1-iconColor-9"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-9"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                 <div class="cards"> <!--card 10-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Slack</a>
+                        <p>Bring agentic productivity to every team with one work operating system.</p>
+                        <div>
+                            <a href="">Explore Slack</a>
+                            <i class="fa-brands fa-slack card1-iconColor-10"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-10"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                 <div class="cards"> <!--card 11-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Analytics</a>
+                        <p>Get powerful insights from any data, anytime, anywhere.</p>
+                        <div>
+                            <a href="">Explore Analytics</a>
+                            <i class="fa-brands fa-stumbleupon-circle card1-iconColor-11"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-11"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                 <div class="cards"> <!--card 12-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">MuleSoft</a>
+                        <p>Connect any app, data, or device — in the cloud or on-premises.</p>
+                        <div>
+                            <a href="">Explore MuleSoft</a>
+                            <i class="fa-solid fa-m card1-iconColor-12"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-12"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="cards"> <!--card 13-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Heroku</a>
+                        <p>Build scalable apps on a cloud-based platform made for developers.</p>
+                        <div>
+                            <a href="">Explore Heroku</a>
+                            <i class="fa-brands fa-korvue card1-iconColor-13"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-13"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                  <div class="cards"> <!--card 14-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Success and Services</a>
+                        <p>Maximize your ROI with self-service resources and trusted guidance from our CRM, AI, and data experts.</p>
+                        <div>
+                            <a href="">Explore Success and Services</a>
+                            <i class="fa-solid fa-user-check card1-iconColor-14"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card1-bg-color-14"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card-section-btn">
+                <a href="#"  class="card-btn">see all pricing</a>
+            </div>
+        </div>
+</section>
+<section class="card-section2-bg card-section">
+ <!-- _______________________________CARD SECTION 2__________________________________________ -->
+        <div class="">
+            <div class="cards-h2">
+                <h2>find the right solution for your company - any size, any industry.</h2>
+            </div>
+            <div class="cards-section-2 grid">
+                <div class="cards"> <!--card 1-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Financial Service</a>
+                        <p>Unlock the most valuable currency: customer trust.</p>
+                        <div>
+                            <a href="">Learn more</a>
+                            <i class="fa-solid fa-desktop card2-icon-color"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card2-bg-color"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                <div class="cards"> <!--card 2-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Retail</a>
+                        <p>Acquire profitable customers faster with unified, real-time data.</p>
+                        <div>
+                            <a href="">Learn more</a>
+                            <i class="fa-solid fa-bag-shopping card2-icon-color"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card2-bg-color"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                <div class="cards"> <!--card 3-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Health & Life Sciences</a>
+                        <p>Build stronger patient and member relationships on a connected platform.</p>
+                        <div>
+                            <a href="">Learn more</a>
+                            <i class="fa-solid fa-heart-pulse card2-icon-color"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card2-bg-color"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                <div class="cards"> <!--card 4-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Construction & Real Estate</a>
+                        <p>Streamline processes and achieve operational excellence.</p>
+                        <div>
+                            <a href="">Learn more</a>
+                            <i class="fa-regular fa-building card2-icon-color"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card2-bg-color"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                <div class="cards"> <!--card 5-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Education</a>
+                        <p>Elevate the education experience with the #1 AI CRM for learner and institution success.</p>
+                        <div>
+                            <a href="">Learn more</a>
+                            <i class="fa-solid fa-graduation-cap card2-icon-color"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card2-bg-color"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                <div class="cards"> <!--card 6-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Professional Services</a>
+                        <p>Increase client trust, recruit and retain the right talent, and build a vibrant work culture.</p>
+                        <div>
+                            <a href="">Learn more</a>
+                            <i class="fa-solid fa-briefcase card2-icon-color"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card2-bg-color"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="cards"> <!--card 7-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Technology</a>
+                        <p>Automate workflows, unify and integrate data, and thrive in a new era of tech, powered by trusted AI.</p>
+                        <div>
+                            <a href="">Learn more</a>
+                            <i class="fa-brands fa-korvue card2-icon-color"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card2-bg-color"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+                <div class="cards"> <!--card 8-->
+                    <div class="card-padding"> <!-- the card's padding container-->
+                        <a href="#">Manufacturing</a>
+                        <p>Integrate all your data across a unified value chain to better serve customers and channel partners.</p>
+                        <div>
+                            <a href="">Learn more</a>
+                            <i class="fa-solid fa-gear card2-icon-color"></i>
+                        </div>
+                    </div>
+                    <div class="card-bg card2-bg-color"> <!-- my custom build card background design-->
+                        <img src="../PICTURES/cloud3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card-section-btn">
+                <a href="#" class="card-btn">See all Industries</a>
+            </div>
+        </div>
+</section>
+<!-- ______________________________________________section 4________________________________________________ -->
+ <section class="sec4">
+    <div class="sec4-grid">
+        <div class="sec4-gridItem-1">
+            <h3>What is Salesforce?</h3>
+            <p>Salesforce brings together all your data, from any source, 
+                so you can act on it with trusted <a href="#" class="a-blue-color">AI</a> and automation, all on one integrated <a href="#" class="a-blue-color"> CRM</a> platform.
+                It makes it easy to find more prospects, close more deals,
+                and connect with customers in a whole new way.
+                So it's little wonder <a href="#" class="a-blue-color">Salesforce</a> was named <a href="#" class="a-blue-color">the world's #1 CRM</a> for 11 years running.
+            </p>
+        </div>
+        <div class="hero1_div2 section-divide sec4-gridItem-2">
+            <div class="video_wrapper">
+                <video src="../VIDEOS/hero_section_video1.mp4" autoplay muted loop preload="none"></video>
+            </div>
+        </div>
+    </div>
+ </section>
+<!-- _______________________________________________section 5_________________________________________________ -->
+ <section class="sec5">
+    <h2>Let's make this easy.</h2>
+    <div class="sec5-grid">
+        <div class="sec5-grid-item-1 hero1_div2 section-divide">
+            <div class="video_wrapper">
+                <video src="../VIDEOS/hero_section_video1.mp4" autoplay muted loop preload="none"></video>
+            </div>
+        </div> 
+        <div class="sec5-grid-item-2">
+            <h3>Get up and running quickly.</h3>
+            <p>Get started with Starter Suite, the all-in-one CRM app for marketing, sales, and service.</p>
+            <div class="sec5-button">
+                <a href="project1LoginPage.html" class="bg-blue-btn2" target="_blank">Try for free</a>
+            </div>
+            <div class="ash-border-design">
+                <div class="blue-border-design-2">
+                    <p>1. Set up and start.<p>
+                    <p>There's nothing to install. Simply enter your details and you're ready to get going, right in your browser.</p>
+                </div>
+                <p class="sec5-list-p">2. Connect email and sync contacts.</p>
+                <p class="sec5-list-p">3. Bring in your data</p>
+            </div>
+        </div>
+    </div>
+ </section>
+ <!-- _______________________________________________section 6______________________________________________ -->
+ <section class="sec6">
+    <h2>Integrate seamlessly.</h2>
+    <p>Salesforce works with thousands of partner apps and certified consultants to help you extend Salesforce and boost productivity. All are easily discoverable on <a href="#" class="a-blue-color">AppExchange</a>, the leading enterprise cloud marketplace and home to over 9,000 solutions. Need to connect outside systems? We've got you covered with <a href="#" class="a-blue-color">MuleSoft</a>, our API platform.</p>
+    <div class="sec6-button">
+        <a href="#" class="bg-blue-btn2" target="_blank">Browse all apps</a>
+    </div>
+    <img src="../PICTURES/integrate-seamlessly-bg.jpg" alt="integrate image" loading="lazy">
+ </section>
+ <!-- _____________________________________________section 7________________________________________________ -->
+  <section class="sec7">
+    <h2>Solve problems quickly.</h2>
+    <p>Your success is our top priority. Whatever solution you choose, it comes with free one-day ticketing and Salesforce alert monitoring, right out of the box. Need more support? We have a variety of <a href="#" class="a-blue-color">Success Plans</a> and <a href="#" class="a-blue-color">offering resources </a>, expert guidance, and the tech support you need to get the most value from Salesforce.</p>
+  </section>
+  <!-- ___________________________________________section 8_________________________________________________ -->
+  <section class="sec8">
+    <p>Included with all product licenses:</p>
+    <div class="sec8-grid">
+        <img src="../PICTURES/story-img-1.webp" alt="" class="sec8-gridImg" loading="lazy">
+        <img src="../PICTURES/story-img-2.webp" alt="" class="sec8-gridImg" loading="lazy">
+        <img src="../PICTURES/story-img-3.webp" alt="" class="sec8-gridImg" loading="lazy">
+   </div>
+   <img src="../PICTURES/story-solve-problems-bg.jpg" alt="" class="sec8-bg" loading="lazy">
+  </section> 
+<!--______________________________________________section 9_________________________________________________  -->
+<!-- _____________________________________________Learn as you grow_____________________________________ -->
+<section class="sec9">
+    <div class="sec9-div-1">
+        <h3>Learn as you grow.</h3>
+        <p>When you're ready to get up and running on Salesforce, we have all sorts of people and free resources to help your teams quickly get up to speed. And we're always here for you with more learning and support as you continue to grow with Salesforce.</p>
+    </div>
+    <div class="sec9-grid">
+        <div class="sec9-grid-card">
+            <div class="sec9-card-img-container">
+                <img src="../PICTURES/sec9-card-img-1.webp" alt="" loading="lazy">
+                <div class="img-overlay"></div>
+            </div>
+            <div class="sec9-card-text">
+                <i>Trailhead</i>
+                <p><a href="#" class="sec9-a-1">Help every employee get the Salesforce skills they need.</a></p>
+                <p><a href="#" class="sec9-a-2">Learn for free</a></p>
+            </div>
+        </div>
+        <div class="sec9-grid-card">
+            <div class="sec9-card-img-container">
+                <img src="../PICTURES/sec9-card-img-2.webp" alt="" loading="lazy">
+                <div class="img-overlay"></div>
+            </div>
+            <div class="sec9-card-text">
+                <i>Salesforce+</i>
+                <p><a href="#" class="sec9-a-1">Learn more about products at live and on-demand events.</a></p>
+                <p><a href="#" class="sec9-a-2">Explore events</a></p>
+            </div>
+        </div>
+        <div class="sec9-grid-card">
+            <div class="sec9-card-img-container">
+                <img src="../PICTURES/sec9-card-img-3.jpg" alt="" loading="lazy">
+                <div class="img-overlay"></div>
+            </div>
+            <div class="sec9-card-text">
+                <i>AppExchange</i>
+                <p><a href="#" class="sec9-a-1">Get the most out of Salesforce with partner apps and experts.</a></p>
+                <p><a href="#" class="sec9-a-2">Explore partners</a></p>
+            </div>
+        </div>
+        <div class="sec9-grid-card">
+            <div class="sec9-card-img-container">
+                <img src="../PICTURES/sec9-card-img-4.webp" alt="" loading="lazy">
+                <div class="img-overlay"></div>
+            </div>
+            <div class="sec9-card-text">
+                <i>Community</i>
+                <p><a href="#" class="sec9-a-1">Connect with our customers, partners, and product experts.</a></p>
+                <p><a href="#" class="sec9-a-2">Explore Trailblazer Community</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- _______________________________________________section 10______________________________________________ -->
+<section class="sec10">
+    <div class="sec10-center-text">
+        <h2>Don't just take our word for it.</h2>
+        <h3>See how our customers work smarter, drive automation, and grow revenue.</h3>
+        <p>Companies around the globe see eye-popping results with Salesforce. You can, too.</p>
+    </div>
+    <div class="sec10-card-grid">
+        <div class="sec10-card">
+            <img src="../PICTURES/sec10-cardimg-1.webp" alt="">
+            <p>Ennube saves time with AI-generated emails.</p>
+            <a href="">Read the Ennube story ></a>
+        </div>
+        <div class="sec10-card">
+            <img src="../PICTURES/sec10-cardimg-2.png" alt="">
+            <p>Algo cuts call times with Salesforce automation.</p>
+            <a href="#">Read the Algo story ></a>
+        </div>
+        <div class="sec10-card">
+            <img src="../PICTURES/sec10-cardimg-3.webp" alt="">
+            <p>Inter boosts ROI by personalizing every banking experience.</p>
+            <a href="#">Read the Inter story ></a>
+        </div>
+    </div>
+</section>
+<!--____________________________________________________section 11__________________________________________ -->
+    <!--____________________________________________hear top industry section____________________________  -->
+<section class="sec11">
+    <div class="sec11-div-1">
+        <h2>Hear what the top voices in the industry have to say.</h2>
+        <div class="sec11-button">
+            <a href="#" class="sec11-btn" target="_blank">See all reports</a>
+        </div>
+    </div>
+    <div class="sec11-div-2">
+        <div class="sec11-card">
+            <img src="../PICTURES/sec11-cardImg-1.webp" alt="image" loading="lazy">
+            <h3>Salesforce is voted the #1 Global Software Company on G2.</h3>
+            <a href="">Get the report</a>
+        </div>
+        <div class="sec11-card">
+            <img src="../PICTURES/sec11-cardImg-2.webp" alt="image" loading="lazy">
+            <h3>New Valoir research reveals how businesses scale AI agents 16x faster with Agentforce.</h3>
+            <a href="">Get the report</a>
+        </div>
+        <div class="sec11-card">
+            <img src="../PICTURES/sec11-cardImg-3.webp" alt="image" loading="lazy">
+            <h3>Futurum report explains why Agentforce is the fastest path to enterprise value.</h3>
+            <a href="">Get the report</a>
+        </div>
+    </div>
+</section>
+<!-- ______________________________________________section 12_______________________________________________ -->
+ <!-- ____________________________________________get started section_______________________________________ -->
+    <!-- first section -->
+     <section class="getStarted-section">
+        <p class="getStarted-text">Get started today</p>
+        <p class="getStarted-text">There's nothing to install. No credit card <br> required. Free for 30 days.</p>
+        <div class="blue-button">
+            <a href="project1LoginPage.html" class="bg-blue-btn" target="_blank">Try for free</a>
+        </div>
+    </section>
+
+    <!-- second section (quick links) -->
+     <section>
+        <div class="gridbox-quickLinks">
+            <div class="grid-link-contactUs">
+                <img src="../PICTURES/Salesforce-logo.jpg" alt="saleforce logo" class="logo2">
+                <div class="icon-box">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <p>Call us at 1-800-664-9073</p>
+                <a href="project1ContactUsPage.html" class="contact-link5">See all ways to contact us</a>
+            </div>
+            <div class="grid-link1">
+                <p class="bold-Text">New to Salesforce ?</p>
+                <ul class="links">
+                    <li><a href="#"class="quick-links">What is CRM?</a></li>
+                    <li><a href="#"class="quick-links">Digital Marketing</a></li>
+                    <li><a href="#"class="quick-links">Customer Service Software</a></li>
+                    <li><a href="#"class="quick-links">Email Marketing</a></li>
+                    <li><a href="#"class="quick-links">Ecommerce</a></li>
+                    <li><a href="#"class="quick-links">Artificial Intelligence</a></li>
+                    <li><a href="#"class="quick-links">Revenue Management Solutions</a></li>
+                    <li><a href="#"class="quick-links">AI Agents</a></li>
+                    <li><a href="#"class="quick-links">SaaS</a></li>
+                </ul>
+            </div>
+            <div class="grid-link2">
+                <p class="bold-Text">About Salesforce</p>
+                <ul class="links">
+                    <li><a href="#"class="quick-links">What is salesforce</a></li>
+                    <li><a href="#"class="quick-links">Newsroom</a></li>
+                    <li><a href="#"class="quick-links">Customer Success</a></li>
+                    <li><a href="#"class="quick-links">Blog</a></li>
+                    <li><a href="#"class="quick-links">Careers</a></li>
+                    <li><a href="#"class="quick-links">Trust</a></li>
+                    <li><a href="#"class="quick-links">Sustainability</a></li>
+                    <li><a href="#"class="quick-links">Investors</a></li>
+                    <li><a href="#"class="quick-links">Give us your Feedback</a></li>
+                </ul>
+            </div>
+            <div class="grid-link3">
+                <p class="bold-Text">Popular Links</p>
+                <ul class="links">
+                    <li><a href="#"class="quick-links">Salesforce login</a></li>
+                    <li><a href="#"class="quick-links">News release features</a></li>
+                    <li><a href="#"class="quick-links">Find or Become a Partner</a></li>
+                    <li><a href="#"class="quick-links">Dreamforce</a></li>
+                    <li><a href="#"class="quick-links">Salesforce+</a></li>
+                    <li><a href="#"class="quick-links">CRM Software</a></li>
+                    <li><a href="#"class="quick-links">All Cloud Products</a></li>
+                    <li><a href="#"class="quick-links">Product Pricing</a></li>
+                    <li><a href="#"class="quick-links">Newsletter Sign-up</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!-- _______________________________sticky container section___________________ -->
+    <div class="sticky">
+        <div class="sticky-container">
+            <div class="sticky-input">
+                <input type="text" placeholder="Ask me about products, features, pricing, or connect to a sales rep. ">
+            </div>
+            <div class="sticky-container-btn-grid">
+                <button>Connect me with a sales rep</button>
+                <button>Show me an Agentforce demo</button>
+                <button>How can Salesforce help my business</button>
+            </div>
+        </div>
+    </div>
+    <!-- ________________________________________the footer section___________________ -->
+    <footer>
+        <div class="foot_div1">
+            <a href="#" class="foot-link-div1">worldwide</a>
+        </div>
+        <div class="foot_div2">
+                <div id="foot-div2-links">
+                    <a href="#" class="foot-text">Legal</a></li>
+                    <a href="#" class="foot-text">Terms of Service</a></li>
+                    <a href="#" class="foot-text">Privacy Information</a></li>
+                    <a href="#" class="foot-text">Responsible Disclosure</a></li>
+                    <a href="#" class="foot-text">Trust</a></li>
+                    <a href="project1ContactUsPage.html" class="foot-text">Contact</a></li>
+                    <a href="#" class="foot-text">Cookie Preferences</a></li>
+                    <a href="#" class="foot-text">Your Privacy Choices</a></li>
+                </div>
+            <p class="foot-text foot-text-a">© Copyright 2025 Salesforce, Inc. <a href="#">All rights reserved</a>. Various trademarks held by their respective owners. Salesforce, Inc. <br> Salesforce Tower, 415 Mission Street, 3rd Floor, San Francisco, CA 94105, United States</p>
+        </div>
+    </footer>
+<!-- https://620cfhtl-5500.uks1.devtunnels.ms/WEB_DEV/WEBDEVPROJECTS/project1LandingPage.html -->
+</body>
+</html>
