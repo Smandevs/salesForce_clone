@@ -1306,15 +1306,6 @@ footer{
 /* _______________________________RESPONSIVE DESIGN_____________________________ */
 
 @media(width< 1200px) {
-    .nav-large{
-        display: none;
-    }
-    .nav-small{
-        display: flex;
-    }
-    .mobile-nav{
-        display: block;
-    }
     .sec10-card a{
         position: absolute;
         top: 100%;
@@ -1334,6 +1325,9 @@ footer{
     }
     .nav-small{
         display: flex;
+    }
+    .mobile-nav{
+        display: block;
     }
     .gridbox-quickLinks{
         display: none;
@@ -1576,7 +1570,7 @@ footer{
         margin-right: 0;
     }
 }
-@media (max-width:1200px){
+@media (max-width:979px){
     .mobile-nav{
         display: block;
         position: absolute;
